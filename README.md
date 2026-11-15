@@ -46,11 +46,6 @@ The major decisions are captured as ADRs in [`docs/adr/`](docs/adr/):
 6. delta-rs idempotent MERGE keyed on business key + `row_hash` (ADR 0006).
 7. PPAC landing via Power Automate is **OPTIONAL / CLIENT-SUPPLIED** (ADR 0007).
 
-## Non-goals
-
-- A full agent / model / tool inventory (only a thin agent dimension is kept).
-- Runtime tracing/telemetry (handled by a separate SDK).
-- Infrastructure provisioning, deployment pipelines, or hosting setup.
 
 ## Repository layout
 
