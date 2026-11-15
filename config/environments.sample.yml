@@ -1,0 +1,15 @@
+# Sample configuration - placeholders only, NO secrets.
+tenant_id: "<tenant-id>"
+client_id: "<client-id>"
+identity_mode: "managed_identity"      # managed_identity | service_principal | azure_cli
+delta_base_uri: "abfss://usage@<storage-account>.dfs.core.windows.net/csu"
+storage_account: "<storage-account>"
+storage_container: "usage"
+landing_container: "landing"
+page_size: 5000
+enable_user_level_credit_api: false     # ADR 0004 - keep disabled
+environments:
+  - environment_id: "ExampleEnvironment-Dev"
+    dataverse_url: "https://<dataverse-org>-dev.crm.dynamics.com"
+  - environment_id: "ExampleEnvironment-Prod"
+    dataverse_url: "https://<dataverse-org>.crm.dynamics.com"

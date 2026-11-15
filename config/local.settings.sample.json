@@ -1,0 +1,7 @@
+{
+  "note": "Copy to local.settings.json (git-ignored). Placeholders only - never commit secrets.",
+  "AZURE_TENANT_ID": "<tenant-id>",
+  "AZURE_CLIENT_ID": "<client-id>",
+  "AZURE_CLIENT_SECRET": "<set-in-environment-or-key-vault-not-here>",
+  "LANDING_STORAGE": "<managed-identity-or-connection-reference>"
+}

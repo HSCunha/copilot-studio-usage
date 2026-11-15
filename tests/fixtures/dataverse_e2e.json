@@ -1,0 +1,48 @@
+{
+  "environment_id": "ExampleEnvironment",
+  "bots": [
+    {
+      "botid": "AGENT-1",
+      "name": "Orders Assistant",
+      "ismanaged": false,
+      "configuration": "{\"optInUseLatestModels\": true}"
+    },
+    {
+      "botid": "AGENT-2",
+      "name": "HR Helpdesk",
+      "ismanaged": true
+    }
+  ],
+  "msdyn_botsessions": [
+    {
+      "msdyn_botsessionid": "SESS-1",
+      "_msdyn_botid_value": "AGENT-1",
+      "createdon": "2026-11-01T10:00:00Z",
+      "msdyn_outcome": "Resolved",
+      "msdyn_csat": 5,
+      "msdyn_engaged": true
+    },
+    {
+      "msdyn_botsessionid": "SESS-2",
+      "_msdyn_botid_value": "AGENT-2",
+      "createdon": "2026-11-01T11:30:00Z",
+      "msdyn_outcome": "Escalated",
+      "msdyn_csat": 3,
+      "msdyn_engaged": true
+    }
+  ],
+  "conversationtranscripts": [
+    {
+      "conversationtranscriptid": "T-1",
+      "_msdyn_botsession_value": "SESS-1",
+      "content": "{\"activities\": [{\"type\": \"message\", \"from\": {\"role\": \"user\", \"id\": \"user-aaa\"}, \"channelId\": \"webchat\", \"text\": \"Where is my order?\"}, {\"type\": \"message\", \"from\": {\"role\": \"bot\", \"id\": \"AGENT-1\"}, \"text\": \"Let me check that for you.\"}, {\"type\": \"event\", \"name\": \"SessionInfo\", \"value\": {\"valueType\": \"engaged\"}}]}",
+      "createdon": "2026-11-01T10:00:05Z"
+    },
+    {
+      "conversationtranscriptid": "T-2",
+      "_msdyn_botsession_value": "SESS-2",
+      "content": "{\"activities\": [{\"type\": \"message\", \"from\": {\"role\": \"user\", \"id\": \"user-bbb\"}, \"channelId\": \"msteams\", \"text\": \"Reset my password\"}, {\"type\": \"message\", \"from\": {\"role\": \"bot\", \"id\": \"AGENT-2\"}, \"text\": \"Sure, starting that now.\"}, {\"type\": \"message\", \"from\": {\"role\": \"user\", \"id\": \"user-bbb\"}, \"text\": \"thanks\"}, {\"type\": \"event\", \"name\": \"SessionInfo\", \"value\": {\"valueType\": \"engaged\"}}]}",
+      "createdon": "2026-11-01T11:30:05Z"
+    }
+  ]
+}

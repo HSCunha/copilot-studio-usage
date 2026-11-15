@@ -1,0 +1,5 @@
+Agent_Name,Usage_Date,Product / AI feature,Channel,LLM model,Knowledge sources / Tool used,Billed_credit,Non_billed_credit,User
+Orders Assistant,2026-11,Generative answers,webchat,gpt-4o,SharePoint,"1,200.0",5.0,
+Orders Assistant,2026-11,Classic answers,webchat,,,900.5,0.0,
+HR Helpdesk,2026-11,Agent actions,msteams,gpt-4o,Power Automate flow,800.0,10.0,
+HR Helpdesk,2026-11,Generative answers,msteams,gpt-4o-mini,,484.0,0.0,

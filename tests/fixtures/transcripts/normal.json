@@ -1,0 +1,28 @@
+{
+  "activities": [
+    {
+      "type": "message",
+      "from": {
+        "role": "user",
+        "id": "user-aaa"
+      },
+      "channelId": "webchat",
+      "text": "Where is my order?"
+    },
+    {
+      "type": "message",
+      "from": {
+        "role": "bot",
+        "id": "AGENT-1"
+      },
+      "text": "Let me check that for you."
+    },
+    {
+      "type": "event",
+      "name": "SessionInfo",
+      "value": {
+        "valueType": "engaged"
+      }
+    }
+  ]
+}

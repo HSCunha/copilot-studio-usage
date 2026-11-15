@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Local runtime output / state (never commit)
+.local/
+*.jsonl
+local.settings.json
+.watermarks.json
+
+# Secrets / credentials (must never be committed)
+*.pem
+*.key
+*.pfx
+*.p12
+.secrets/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

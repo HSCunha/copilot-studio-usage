@@ -1,0 +1,19 @@
+{
+  "activities": [
+    {
+      "type": "message",
+      "from": {
+        "role": "user",
+        "id": "u1"
+      },
+      "channelId": "webchat"
+    },
+    {
+      "type": "typing"
+    },
+    {
+      "type": "handoff",
+      "name": "EscalateToHuman"
+    }
+  ]
+}
